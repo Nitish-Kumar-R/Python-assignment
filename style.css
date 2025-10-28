@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(DNA.jpg);
+    background position: fixed;
+    background-size: cover;
+    height: 127vh;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch::placeholder {
+    color: rgba(57, 57, 57, 0.904);
+    font-family: Arial, sans-serif;
+}
+
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 170px;
+    height: 35px;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: rgb(19, 19, 24);
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn{
+    width: 90px;
+    height: 35px;
+    background: #ff7200;
+    border: 1px solid #ff7200;
+    color: white;
+    font-size: 15px;
+    float: left;
+    margin-top: 13px;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn:hover{
+    background: #ff7200;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    color: aliceblue;
+    position: relative;
+    top: -490px;  /* Changed from 50px to move content up below logo */
+}
+
+.content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 1px;
+    margin-top: 2%;  /* Reduced from 5% for tighter spacing */
+    letter-spacing: 2px;
+}
+
+.form {
+    // ...existing code...
+    width: 300px;
+    height: auto;  /* Changed from fixed height to auto */
+    background: linear-gradient(to top, rgba(0,0,0,0.9)50%, rgba(0,0,0,0.9)50%);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 15px;
+    padding: 35px;  /* Increased padding */
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,114,0,0.3);
+}
+
+.form h2 {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 24px;  /* Increased font size */
+    margin-bottom: 30px;  /* Increased margin */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgba(255,114,0,0.3);  /* Changed from border to border-bottom */
+    padding-bottom: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 45px;  /* Increased height */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255,114,0,0.3);
+    border-radius: 8px;
+    margin-bottom: 25px;  /* Increased margin */
+    padding: 0 15px;  /* Added horizontal padding */
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #ff7200;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255,114,0,0.1);
+}
+
+.btnn {
+    width: 100%;  /* Changed from fixed width */
+    height: 45px;  /* Increased height */
+    background: #ff7200;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btnn:hover {
+    background: #ff8c33;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,114,0,0.3);
+}
+
+.form p.link {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.form a {
+    text-decoration: none;
+    color: #ff7200;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form a:hover {
+    color: #ff8c33;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 100%;
+    height: 35px;
+    background: #ff7200;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;  /* White text color */
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btnn:hover {
+    background: #ff8c33;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,114,0,0.3);
+    color: #007bff;  /* Blue text color on hover */
+}
+
+/* Remove the duplicate .btnn declaration that appears later in your CSS */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid rgba(255,114,0,0.3);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255,114,0,0.2);
+    color: #ff7200;
+}
+
+.show {
+    display: block;
+}
+
+.dropbtn:after {
+    content: ' ▼';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    color: aliceblue;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 1;
+}
+
+.about-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 114, 0, 0.3);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.about-list {
+    list-style: disc;
+    margin: 20px 0 20px 40px;
+    float: none;
+    display: block;
+}
+
+.about-list li {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.par {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(255, 114, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 114, 0, 0.2);
+}
+
+.profile-img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border: 3px solid #ff7200;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img.placeholder {
+    background: rgba(255, 114, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card h3 {
+    color: #ff7200;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-info p {
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info p i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.email-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff7200" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>');
+}
+
+.phone-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff7200" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>');
+}
+
+.partners-section {
+    margin-top: 10px;
+    padding: 30px;
+    max-width: 800px;  /* Match about-container width */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 114, 0, 0.3);
+}
+
+.partners-section h2 {
+    color: #ff7200;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: flex-start;  /* Changed from center to flex-start */
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.partner-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 114, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 114, 0, 0.2);
+}
+
+.partner-card img {
+    width: 200px;
+    height: 100px;
+    object-fit: auto;
+    margin-bottom: 15px;
+}
+
+.partner-card h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Sources Page Styles */
+.sources-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.source-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 114, 0, 0.3);
+    transition: transform 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.source-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(255, 114, 0, 0.2);
+}
+
+.source-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.source-card a {
+    text-decoration: none;
+}
+
+.source-card h3 {
+    color: #ff7200;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.source-card p {
+    color: white;
+    font-size: 16px;
+}
